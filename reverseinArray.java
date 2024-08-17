@@ -1,37 +1,22 @@
-public class reverseinArray {
-    public static void reverse(int number[]){
+ /**
+  * reverseinArray
+  */
+  import java.util.*;
+ public class reverseinArray {
+ 
+     public static void main(String[] args) {
+        int array[]={ 21,22,23,24,25,26};
+         int first=0 ,last =array.length-1;
+          while(first<last){
 
-    
-    int first= 0, last= number.length-1;
-    while(first < last){
-        
-        int temp = number [last];
-      number  [last ]= number[first];
-      number  [first] = temp;
-        first++;
-        last--;
+             int temp= array[first];
+            array[first]= array[last];
+            array[last]=  temp;
+            first++;
+            last--;
+        }
+        System.out.print(array.toString());
+
     }
-    }
-
-public static void main(String[] args) {
-    int number[]={1,2,3,4,5,6,7,};
-    
-     reverse(number);
-    for(int i = 0; i<number.length; i++){
         
-        System.out.print(number[i]+" ");
-                    
-        
-    }
-    System.out.println();
-            }
-        }         
-      
-        
-         
-
-         
-
-       
-    
-
+}
